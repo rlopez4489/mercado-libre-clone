@@ -17,7 +17,7 @@ export const searchItems = async (query) => {
   }
 };
 
-export const getItemDescription = async (itemId) => {
+export const getItemDetails = async (itemId) => {
   try {
     const response = await axios.get(`${API_URL}/items/${itemId}`);
     return response.data;
@@ -26,5 +26,14 @@ export const getItemDescription = async (itemId) => {
     throw error;
   }
 };
+export const getItemDescription = async (itemId) => {
+  try {
+    const response = await axios.get(`${API_URL}/items/${itemId}/description`);
+    return response.data;
+  } catch (error) {
+    console.error("Error al obtener la descripción del artículo:", error);
+    throw error;
+  }
+};
 
-export default { searchItems, getItemDescription };
+export default { searchItems, getItemDescription, getItemDetails };
