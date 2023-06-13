@@ -1,0 +1,28 @@
+.size-img {
+  width: 90px;
+  height: 90px;
+}
+.price-skeleton {
+  width: 80px;
+}
+.title-skeleton {
+  width: 250px;
+}
+.product-skeleton {
+  width: 80px;
+}
+@media (max-width: 550px) {
+    .size-img {
+        width: 90px;
+        height: 90px;
+      }
+      .price-skeleton {
+        width: 80px;
+      }
+      .title-skeleton {
+        width: 100px;
+      }
+      .product-skeleton {
+        width: 80px;
+      }
+}
