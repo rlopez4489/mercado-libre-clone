@@ -1,0 +1,15 @@
+@import "../base.scss";
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $yellow-color;
+  padding: 8px 100px;
+}
+.nav-container-items {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
