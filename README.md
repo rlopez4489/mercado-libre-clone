@@ -9,6 +9,9 @@ formulario navegar a la vista de Resultados de búsqueda, visualizando solo 4 pr
 al hacer click sobre uno de ellos, debería navegar a la vista de Detalle de Producto.
 - Dado un id de producto, debería poder ingresar directamente a la vista de detalle de producto.
 
+## Demo
+
+Puedes ver una demostración en vivo de este proyecto [aquí](https://meli-search-challenge.netlify.app/).
 
 ## Tecnologías utilizadas
 
