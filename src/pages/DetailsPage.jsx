@@ -56,6 +56,11 @@ const DetailsPage = () => {
     getItemDataDescription();
   }, [id]);
 
+  const sold_quantity_value =
+    Number(productDetail?.sold_quantity) > 1
+      ? `${productDetail?.sold_quantity} Vendidos`
+      : `${productDetail?.sold_quantity} Vendido`;
+
   return (
     <MainLayout>
       <ContainerProducts>
@@ -83,9 +88,7 @@ const DetailsPage = () => {
               <div className="container-detail">
                 <span className="condition_solds">
                   {productDetail?.condition === "new" ? "Nuevo" : "Usado"} -{" "}
-                  {Number(productDetail?.sold_quantity) > 1
-                    ? `${productDetail?.sold_quantity} Vendidos`
-                    : `${productDetail?.sold_quantity} Vendido`}
+                  {sold_quantity_value}
                 </span>
                 <h1 className="title-detail">{productDetail?.title} </h1>
                 <span className="price">
